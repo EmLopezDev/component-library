@@ -1,0 +1,32 @@
+*,
+::before,
+::after {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    min-height: 100vh;
+    width: 100%;
+    background: linear-gradient(to right, #f9fafb, #d2d6db);
+    display: flex;
+    justify-content: center;
+}
+
+#root {
+    width: 100%;
+    padding: 2rem;
+    min-height: 100vh;
+    max-width: 1200px;
+    display: flex;
+    justify-content: center;
+}
+
+.testimonial__container {
+    height: 100%;
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(min(100%, 340px), 1fr));
+    gap: 24px;
+    align-content: start;
+}

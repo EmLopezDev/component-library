@@ -1,0 +1,86 @@
+.testimonial__page {
+    display: flex;
+    flex-direction: column;
+    gap: 16px;
+    width: 100%;
+
+    .testimonial__single {
+        width: 340px;
+        margin: 0 auto;
+    }
+}
+
+.testimonial__page h2 {
+    text-align: center;
+}
+
+.testimonial__card {
+    --primary-background-color: #ffffff;
+    --linear-background-color: linear-gradient(to right, #f9fafb, #d2d6db);
+    --primary-text-color: #171717;
+    --secondary-text-color: #525252;
+
+    height: 233px;
+    padding: 24px;
+    display: flex;
+    flex-direction: column;
+    flex-shrink: 0;
+    gap: 16px;
+    background-color: var(--primary-background-color);
+    border: none;
+    border-radius: 8px;
+    box-shadow: 0 24px 78.4px -27px rgba(43, 43, 43, 15%);
+    transition: transform 0.25s ease-in-out;
+
+    .testimonial__header {
+        display: flex;
+        align-items: center;
+        gap: 16px;
+
+        .testimonial__avatar {
+            width: 48px;
+            height: 48px;
+        }
+
+        .testimonial__meta-data {
+            display: flex;
+            flex-direction: column;
+            gap: 1px;
+            min-width: 0;
+
+            .testimonial__name {
+                color: var(--primary-text-color);
+                font-size: 1.125rem;
+                font-weight: 600;
+            }
+
+            .testimonial__user-name {
+                color: var(--secondary-text-color);
+                font-size: 0.875rem;
+            }
+        }
+
+        .testimonial__meta-data .testimonial__name,
+        .testimonial__user-name {
+            overflow: hidden;
+            text-overflow: ellipsis;
+            white-space: nowrap;
+        }
+    }
+
+    .testimonial__comment {
+        color: var(--secondary-text-color);
+        font-size: 1rem;
+        line-height: 1.5;
+        line-clamp: 4;
+        display: -webkit-box;
+        -webkit-box-orient: vertical;
+        -webkit-line-clamp: 4;
+        overflow: hidden;
+        overflow-wrap: anywhere;
+    }
+}
+
+.testimonial__card:hover {
+    transform: scale(1.08);
+}
