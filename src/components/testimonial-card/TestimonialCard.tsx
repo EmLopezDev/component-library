@@ -1,4 +1,5 @@
 import "./TestimonialCard.css";
+import defaultAvatart from "../../assets/testimonial_card/defaultAvatar.webp";
 
 export type TestimonialCardProps = {
     id: number;
@@ -16,23 +17,24 @@ const TestimonialCard = ({
     avatarUrl,
     comment,
 }: TestimonialCardProps) => {
+    const displayName = firstName + lastName || "User";
     return (
-        <article className="testimonial__card">
-            <div className="testimonial__header">
-                <img
-                    className="testimonial__avatar"
-                    src={avatarUrl}
-                    alt={`${firstName} ${lastName} picture`}
-                />
-                <div className="testimonial__meta-data">
-                    <h3 className="testimonial__name">
-                        {firstName} {lastName}
-                    </h3>
-                    <span className="testimonial__user-name">{userName}</span>
+        comment && (
+            <article className="testimonial__card">
+                <div className="testimonial__header">
+                    <img
+                        className="testimonial__avatar"
+                        src={avatarUrl || defaultAvatart}
+                        alt={`${displayName} avatar`}
+                    />
+                    <div className="testimonial__meta-data">
+                        <h3 className="testimonial__name">{displayName}</h3>
+                        <span className="testimonial__user-name">{userName}</span>
+                    </div>
                 </div>
-            </div>
-            <p className="testimonial__comment">{comment}</p>
-        </article>
+                <p className="testimonial__comment">{comment}</p>
+            </article>
+        )
     );
 };
 

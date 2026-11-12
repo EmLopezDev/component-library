@@ -14,7 +14,7 @@ const App = () => {
                     firstName={singelCardData.firstName}
                     lastName={singelCardData.lastName}
                     userName={singelCardData.userName}
-                    avatarUrl={singelCardData.avatarUrl}
+                    avatarUrl=""
                     comment={singelCardData.comment}
                 />
             </div>
