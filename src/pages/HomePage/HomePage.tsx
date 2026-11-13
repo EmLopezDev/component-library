@@ -8,6 +8,9 @@ const Home = () => {
                 <li>
                     <Link to="/components/testimonial-card">Testimonial Card</Link>
                 </li>
+                <li>
+                    <Link to="/components/blog-card">Blog Card</Link>
+                </li>
             </ul>
         </section>
     );

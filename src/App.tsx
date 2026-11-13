@@ -5,6 +5,7 @@ import Home from "./pages/HomePage/HomePage.tsx";
 const TestimonialCardPage = lazy(
     () => import("./pages/TestimonialCardPage/TestimonialCardPage.tsx"),
 );
+const BlogCardPage = lazy(() => import("./pages/BlogCardPage/BlogCardPage.tsx"));
 
 const App = () => {
     return (
@@ -18,6 +19,10 @@ const App = () => {
                     <Route
                         path="/components/testimonial-card"
                         element={<TestimonialCardPage />}
+                    />
+                    <Route
+                        path="/components/blog-card"
+                        element={<BlogCardPage />}
                     />
                 </Routes>
             </Suspense>

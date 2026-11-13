@@ -1,5 +1,5 @@
 import TestimonialCard from "../../components/testimonial-card/TestimonialCard";
-import { testimonialCardData } from "../../components/testimonial-card/data";
+import { testimonialCardData } from "../../components/testimonial-card/testimonial-data";
 import "./TestimonialCardPage.css";
 
 const singelCardData = testimonialCardData[2];
