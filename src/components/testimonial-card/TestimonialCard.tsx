@@ -28,7 +28,7 @@ const TestimonialCard = ({
                         alt={`${displayName} avatar`}
                     />
                     <div className="testimonial__meta-data">
-                        <h3 className="testimonial__name">{displayName}</h3>
+                        <span className="testimonial__name">{displayName}</span>
                         <span className="testimonial__user-name">{userName}</span>
                     </div>
                 </div>

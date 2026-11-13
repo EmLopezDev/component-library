@@ -1,0 +1,16 @@
+.testimonial__page {
+    display: flex;
+    flex-direction: column;
+    gap: 16px;
+    width: 100%;
+
+    .testimonial__single {
+        max-width: 340px;
+        width: 100%;
+        margin: 0 auto;
+    }
+}
+
+.testimonial__page h2 {
+    text-align: center;
+}
