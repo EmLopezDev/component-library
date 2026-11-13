@@ -1,5 +1,5 @@
 import "./TestimonialCard.css";
-import defaultAvatart from "../../assets/testimonial_card/defaultAvatar.webp";
+import defaultAvatart from "../../assets/testimonial-card/defaultAvatar.webp";
 
 export type TestimonialCardProps = {
     id: number;

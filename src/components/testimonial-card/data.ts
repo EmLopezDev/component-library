@@ -1,10 +1,10 @@
 import { type TestimonialCardProps } from "./TestimonialCard";
-import sarahImage from "../../assets/testimonial_card/sarah.webp";
-import marcusImage from "../../assets/testimonial_card/marcus.webp";
-import emilyImage from "../../assets/testimonial_card/emily.webp";
-import danielImage from "../../assets/testimonial_card/daniel.webp";
-import sophiaImage from "../../assets/testimonial_card/sophia.webp";
-import jamesImage from "../../assets/testimonial_card/james.webp";
+import sarahImage from "../../assets/testimonial-card/sarah.webp";
+import marcusImage from "../../assets/testimonial-card/marcus.webp";
+import emilyImage from "../../assets/testimonial-card/emily.webp";
+import danielImage from "../../assets/testimonial-card/daniel.webp";
+import sophiaImage from "../../assets/testimonial-card/sophia.webp";
+import jamesImage from "../../assets/testimonial-card/james.webp";
 
 export const testimonialCardData: TestimonialCardProps[] = [
     {
