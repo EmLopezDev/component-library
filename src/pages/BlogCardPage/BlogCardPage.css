@@ -1,0 +1,24 @@
+.blog__page {
+    display: flex;
+    flex-direction: column;
+    gap: 16px;
+    width: 100%;
+
+    .blog__single {
+        max-width: 340px;
+        width: 100%;
+        margin: 0 auto;
+    }
+}
+
+.blog__grid__container {
+    height: 100%;
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(min(100%, 340px), 1fr));
+    gap: 24px;
+    align-content: start;
+}
+
+.blog__page h2 {
+    text-align: center;
+}

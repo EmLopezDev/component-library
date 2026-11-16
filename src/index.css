@@ -22,11 +22,3 @@ body {
     display: flex;
     justify-content: center;
 }
-
-.testimonial__container {
-    height: 100%;
-    display: grid;
-    grid-template-columns: repeat(auto-fit, minmax(min(100%, 340px), 1fr));
-    gap: 24px;
-    align-content: start;
-}

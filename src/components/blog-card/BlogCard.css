@@ -9,7 +9,6 @@
     --primary-border-color: #bbf7d0;
     --box-shadow: rgba(43, 43, 43, 15%);
 
-    width: 340px;
     display: flex;
     flex-direction: column;
     flex-shrink: 0;
@@ -70,6 +69,7 @@
                 border: none;
                 background-color: transparent;
                 color: var(--button-text-color);
+                cursor: pointer;
             }
 
             .blog__card__button:disabled {

@@ -3,17 +3,17 @@ import "./BlogCard.css";
 export type BlogCardProps = {
     id: number;
     category: string;
-    imgUrl: string;
+    imageUrl: string;
     title: string;
     bodyText: string;
 };
 
-const BlogCard = ({ category, imgUrl, title, bodyText }: BlogCardProps) => {
+const BlogCard = ({ category, imageUrl, title, bodyText }: BlogCardProps) => {
     return (
         <article className="blog__card">
             <img
                 className="blog__card__image"
-                src={imgUrl}
+                src={imageUrl}
                 alt={`${title} image`}
             />
             <div className="blog__card__content">
