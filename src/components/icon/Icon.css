@@ -1,0 +1,24 @@
+.icon {
+    display: inline-flex;
+    align-items: center;
+    justify-content: center;
+    flex-shrink: 0;
+    line-height: 0;
+
+    svg {
+        display: block;
+        flex-shrink: 0;
+    }
+}
+
+.inherit {
+    color: inherit;
+}
+
+.default {
+    color: white;
+}
+
+.blue {
+    color: #4338ca;
+}

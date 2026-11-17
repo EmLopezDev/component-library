@@ -1,3 +1,4 @@
+import Icon from "../icon/Icon";
 import "./ProfileCard.css";
 
 export type ProfileCardProps = {
@@ -29,10 +30,30 @@ const ProfileCard = ({ name, role, company, avatar, description }: ProfileCardPr
             <div className="profile__contact">
                 <button className="profile__contact__button">Contact me</button>
                 <ul className="profile__contact__social">
-                    <li className="icon">🥳</li>
-                    <li className="icon">🥳</li>
-                    <li className="icon">🥳</li>
-                    <li className="icon">🥳</li>
+                    <li>
+                        <Icon
+                            name="github"
+                            color="blue"
+                        />
+                    </li>
+                    <li>
+                        <Icon
+                            name="linkedin"
+                            color="blue"
+                        />
+                    </li>
+                    <li>
+                        <Icon
+                            name="instagram"
+                            color="blue"
+                        />
+                    </li>
+                    <li>
+                        <Icon
+                            name="x"
+                            color="blue"
+                        />
+                    </li>
                 </ul>
             </div>
         </article>
