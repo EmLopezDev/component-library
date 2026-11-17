@@ -11,6 +11,9 @@ const Home = () => {
                 <li>
                     <Link to="/components/blog-card">Blog Card</Link>
                 </li>
+                <li>
+                    <Link to="/components/profile-card">Profile Card</Link>
+                </li>
             </ul>
         </section>
     );

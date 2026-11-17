@@ -6,6 +6,7 @@ const TestimonialCardPage = lazy(
     () => import("./pages/TestimonialCardPage/TestimonialCardPage.tsx"),
 );
 const BlogCardPage = lazy(() => import("./pages/BlogCardPage/BlogCardPage.tsx"));
+const ProfileCardPage = lazy(() => import("./pages/ProfileCardPage/ProfileCardPage.tsx"));
 
 const App = () => {
     return (
@@ -23,6 +24,10 @@ const App = () => {
                     <Route
                         path="/components/blog-card"
                         element={<BlogCardPage />}
+                    />
+                    <Route
+                        path="/components/profile-card"
+                        element={<ProfileCardPage />}
                     />
                 </Routes>
             </Suspense>
