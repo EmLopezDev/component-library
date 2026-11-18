@@ -16,7 +16,7 @@ export type ProfileCardProps = {
     company: string;
     avatar: string;
     description: string;
-    email: string;
+    email?: string;
     socialMedia: SocialMedia;
 };
 
@@ -24,6 +24,8 @@ const IconLink = ({ link, icon }: { link: string; icon: IconName }) => {
     return (
         <li>
             <a
+                className="icon__link"
+                aria-label={`Link to ${icon}`}
                 href={link}
                 target="_blank"
             >
@@ -62,12 +64,18 @@ const ProfileCard = ({
                 <p className="profile__content__body">{description}</p>
             </div>
             <div className="profile__contact">
-                <a
-                    href={`mailto:${email}`}
-                    className="profile__contact__button"
-                >
-                    Contact me
-                </a>
+                {email ? (
+                    <a
+                        href={`mailto:${email}`}
+                        className="profile__contact__button"
+                    >
+                        Contact me
+                    </a>
+                ) : (
+                    <span className="profile__contact__button profile__contact__button--disabled">
+                        Contact me
+                    </span>
+                )}
                 <ul className="profile__contact__social">
                     {Object.entries(socialMedia).map(([key, value]) => {
                         return (

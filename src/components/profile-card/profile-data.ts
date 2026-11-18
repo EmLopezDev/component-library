@@ -37,7 +37,6 @@ export const profileCardData: ProfileCardProps[] = [
         role: "Senior Front End' Engineer",
         company: "Spotify",
         avatar: marcus,
-        email,
         description:
             "I write CSS until it behaves. Powered by iced coffee, questionable playlists, and the occasional successful deploy.",
         socialMedia: {
@@ -92,7 +91,6 @@ export const profileCardData: ProfileCardProps[] = [
         role: "DevOps Engineer",
         company: "Netflix",
         avatar: theo,
-        email,
         description:
             "It works on my machine. Unfortunately, my machine isn't production. Kubernetes whisperer, allegedly.",
         socialMedia: {

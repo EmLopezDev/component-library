@@ -3,7 +3,10 @@
     --primary-text-color: #171717;
     --secondary-text-color: #525252;
     --tertiary-text-color: #ffffff;
+    --text-color-disabled: #a3a3a3;
     --button-background-color: #4338ca;
+    --button-background-color-hover: #3730a3;
+    --button-background-color-disabled: #f5f5f5;
     --icon-fill-color: #4338ca;
     --box-shadow: rgba(43, 43, 43, 15%);
 
@@ -75,12 +78,41 @@
             cursor: pointer;
             text-decoration: none;
         }
+        .profile__contact__button:hover {
+            background-color: var(--button-background-color-hover);
+        }
+
+        .profile__contact__button:focus-visible {
+            outline: 4px solid #9494ea;
+            outline-offset: 1px;
+        }
+
+        .profile__contact__button--disabled {
+            background-color: var(--button-background-color-disabled);
+            color: var(--text-color-disabled);
+        }
 
         .profile__contact__social {
             display: flex;
             align-items: center;
-            gap: 16px;
+            gap: 12px;
             list-style: none;
         }
     }
+}
+
+.icon__link {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    padding: 4px;
+    border-radius: 8px;
+}
+
+.icon__link:hover {
+    background-color: #fafafa;
+}
+
+.icon__link:focus-visible {
+    outline: 4px solid #9494ea;
 }
