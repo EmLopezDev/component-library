@@ -16,6 +16,8 @@ const ProfileCardPage = () => {
                     company={firsProfile.company}
                     avatar={firsProfile.avatar}
                     description={firsProfile.description}
+                    email={firsProfile.email}
+                    socialMedia={firsProfile.socialMedia}
                 />
             </div>
             <h2>Grid Layout Card</h2>
@@ -30,6 +32,8 @@ const ProfileCardPage = () => {
                             company={entry.company}
                             avatar={entry.avatar}
                             description={entry.description}
+                            email={entry.email}
+                            socialMedia={entry.socialMedia}
                         />
                     );
                 })}

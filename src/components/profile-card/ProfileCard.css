@@ -63,7 +63,8 @@
         gap: 24px;
 
         .profile__contact__button {
-            display: block;
+            display: flex;
+            justify-content: center;
             width: 100%;
             padding: 10px 16px;
             border: none;
@@ -72,6 +73,7 @@
             font-size: 1rem;
             color: var(--tertiary-text-color);
             cursor: pointer;
+            text-decoration: none;
         }
 
         .profile__contact__social {
