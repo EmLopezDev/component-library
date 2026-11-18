@@ -1,0 +1,10 @@
+.button__page {
+    display: flex;
+    flex-direction: column;
+    gap: 24px;
+
+    .button__variant {
+        display: flex;
+        gap: 12px;
+    }
+}

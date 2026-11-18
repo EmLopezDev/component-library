@@ -1,0 +1,69 @@
+.button {
+    --primary-background-color: #4338ca;
+    --primary-background-color-hover: #3730a3;
+    --secondary-background-color: #ffffff;
+    --secondary-background-color-hover: #fafafa;
+    --tertiary-background-color-hover: #fafafa;
+    --primary-text-color: #ffffff;
+    --secondary-text-color: #171717;
+    --tertiary-text-color: #4338ca;
+    --secondary-border-color: #e6e6e6;
+
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    gap: 6px;
+    width: fit-content;
+    height: fit-content;
+    border: none;
+    border-radius: 4px;
+    cursor: pointer;
+    box-shadow:
+        0 1px 3px 0 rgba(0, 0, 0, 10%),
+        0 1px 2px 0 rgba(0, 0, 0, 6%);
+}
+
+.medium {
+    padding: 10px 14px;
+}
+
+.large {
+    padding: 10px 16px;
+}
+
+.xlarge {
+    padding: 12px 20px;
+}
+
+.xxlarge {
+    padding: 16px 24px;
+}
+
+.primary {
+    background-color: var(--primary-background-color);
+    color: var(--primary-text-color);
+}
+
+.primary:hover {
+    background-color: var(--primary-background-color-hover);
+}
+
+.secondary {
+    background-color: var(--secondary-background-color);
+    color: var(--secondary-text-color);
+    border-color: var(--secondary-border-color);
+}
+
+.secondary:hover {
+    background-color: var(--secondary-background-color-hover);
+}
+
+.tertiary {
+    background-color: transparent;
+    box-shadow: none;
+    color: var(--tertiary-text-color);
+}
+
+.tertiary:hover {
+    background-color: var(--tertiary-background-color-hover);
+}

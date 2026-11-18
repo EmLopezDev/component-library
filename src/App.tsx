@@ -7,6 +7,7 @@ const TestimonialCardPage = lazy(
 );
 const BlogCardPage = lazy(() => import("./pages/BlogCardPage/BlogCardPage.tsx"));
 const ProfileCardPage = lazy(() => import("./pages/ProfileCardPage/ProfileCardPage.tsx"));
+const ButtonPage = lazy(() => import("./pages/ButtonPage/ButtonPage.tsx"));
 
 const App = () => {
     return (
@@ -28,6 +29,10 @@ const App = () => {
                     <Route
                         path="/components/profile-card"
                         element={<ProfileCardPage />}
+                    />
+                    <Route
+                        path="/components/button"
+                        element={<ButtonPage />}
                     />
                 </Routes>
             </Suspense>
