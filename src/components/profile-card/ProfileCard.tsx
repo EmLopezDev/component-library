@@ -72,9 +72,7 @@ const ProfileCard = ({
                         Contact me
                     </a>
                 ) : (
-                    <span className="profile__contact__button profile__contact__button--disabled">
-                        Contact me
-                    </span>
+                    <span className="profile__contact__button--disabled">Contact me</span>
                 )}
                 <ul className="profile__contact__social">
                     {Object.entries(socialMedia).map(([key, value]) => {
