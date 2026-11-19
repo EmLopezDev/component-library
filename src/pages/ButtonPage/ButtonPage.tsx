@@ -5,68 +5,515 @@ import "./ButtonPage.css";
 const ButtonPage = () => {
     return (
         <section className="button__page">
+            <h2>Primary Button</h2>
             <div className="button__variant">
-                <Button>Hello</Button>
-                <Button size="large">
-                    <Icon name="github" />
-                    Hello
+                <Button
+                    customType="button"
+                    onClick={() => {}}
+                >
+                    Button
                 </Button>
-                <Button size="xlarge">
-                    <Icon name="github" />
-                    Hello
-                    <Icon name="github" />
+                <Button
+                    customType="button"
+                    size="large"
+                >
+                    <Icon
+                        size="small"
+                        name="star"
+                    />
+                    Button
                 </Button>
-                <Button size="xxlarge">Hello</Button>
-                <Button>
-                    <Icon name="github" />
+                <Button
+                    customType="button"
+                    size="xlarge"
+                >
+                    <Icon
+                        size="small"
+                        name="star"
+                    />
+                    Button
+                    <Icon
+                        size="small"
+                        name="star"
+                    />
+                </Button>
+                <Button
+                    customType="button"
+                    size="xxlarge"
+                >
+                    Button
+                </Button>
+                <Button customType="button">
+                    <Icon
+                        size="small"
+                        name="star"
+                    />
+                </Button>
+                <Button
+                    customType="button"
+                    size="large"
+                >
+                    <Icon
+                        size="small"
+                        name="star"
+                    />
+                </Button>
+                <Button
+                    customType="button"
+                    size="xlarge"
+                >
+                    <Icon
+                        size="small"
+                        name="star"
+                    />
+                </Button>
+                <Button
+                    customType="button"
+                    size="xxlarge"
+                >
+                    <Icon
+                        size="small"
+                        name="star"
+                    />
                 </Button>
             </div>
+            <h2>Secondary Button</h2>
             <div className="button__variant">
-                <Button variant="secondary">Hello</Button>
                 <Button
+                    customType="button"
+                    variant="secondary"
+                >
+                    Button
+                </Button>
+                <Button
+                    customType="button"
                     variant="secondary"
                     size="large"
                 >
-                    <Icon name="github" />
-                    Hello
+                    <Icon
+                        size="small"
+                        name="star"
+                    />
+                    Button
                 </Button>
                 <Button
+                    customType="button"
                     variant="secondary"
                     size="xlarge"
                 >
-                    <Icon name="github" />
-                    Hello
-                    <Icon name="github" />
+                    <Icon
+                        size="small"
+                        name="star"
+                    />
+                    Button
+                    <Icon
+                        size="small"
+                        name="star"
+                    />
                 </Button>
                 <Button
+                    customType="button"
                     variant="secondary"
                     size="xxlarge"
                 >
-                    Hello
+                    Button
+                </Button>
+                <Button
+                    customType="button"
+                    variant="secondary"
+                >
+                    <Icon
+                        size="small"
+                        name="star"
+                    />
+                </Button>
+                <Button
+                    customType="button"
+                    variant="secondary"
+                    size="large"
+                >
+                    <Icon
+                        size="small"
+                        name="star"
+                    />
+                </Button>
+                <Button
+                    customType="button"
+                    variant="secondary"
+                    size="xlarge"
+                >
+                    <Icon
+                        size="small"
+                        name="star"
+                    />
+                </Button>
+                <Button
+                    customType="button"
+                    variant="secondary"
+                    size="xxlarge"
+                >
+                    <Icon
+                        size="small"
+                        name="star"
+                    />
                 </Button>
             </div>
+            <h2>Tertiary Button</h2>
             <div className="button__variant">
-                <Button variant="tertiary">Hello</Button>
                 <Button
+                    customType="button"
+                    variant="tertiary"
+                >
+                    Button
+                </Button>
+                <Button
+                    customType="button"
                     variant="tertiary"
                     size="large"
                 >
-                    <Icon name="github" />
-                    Hello
+                    <Icon
+                        size="small"
+                        name="star"
+                    />
+                    Button
                 </Button>
                 <Button
+                    customType="button"
                     variant="tertiary"
                     size="xlarge"
                 >
-                    <Icon name="github" />
-                    Hello
-                    <Icon name="github" />
+                    <Icon
+                        size="small"
+                        name="star"
+                    />
+                    Button
+                    <Icon
+                        size="small"
+                        name="star"
+                    />
                 </Button>
                 <Button
+                    customType="button"
                     variant="tertiary"
                     size="xxlarge"
                 >
-                    Hello
+                    Button
+                </Button>
+                <Button
+                    customType="button"
+                    variant="tertiary"
+                >
+                    <Icon
+                        size="small"
+                        name="star"
+                    />
+                </Button>
+                <Button
+                    customType="button"
+                    variant="tertiary"
+                    size="large"
+                >
+                    <Icon
+                        size="small"
+                        name="star"
+                    />
+                </Button>
+                <Button
+                    customType="button"
+                    variant="tertiary"
+                    size="xlarge"
+                >
+                    <Icon
+                        size="small"
+                        name="star"
+                    />
+                </Button>
+                <Button
+                    customType="button"
+                    variant="tertiary"
+                    size="xxlarge"
+                >
+                    <Icon
+                        size="small"
+                        name="star"
+                    />
+                </Button>
+            </div>
+            <h2>Destructive Button</h2>
+            <div className="button__variant">
+                <Button
+                    customType="button"
+                    variant="destructive"
+                >
+                    Button
+                </Button>
+                <Button
+                    customType="button"
+                    variant="destructive"
+                    size="large"
+                >
+                    <Icon
+                        size="small"
+                        name="star"
+                    />
+                    Button
+                </Button>
+                <Button
+                    customType="button"
+                    variant="destructive"
+                    size="xlarge"
+                >
+                    <Icon
+                        size="small"
+                        name="star"
+                    />
+                    Button
+                    <Icon
+                        size="small"
+                        name="star"
+                    />
+                </Button>
+                <Button
+                    customType="button"
+                    variant="destructive"
+                    size="xxlarge"
+                >
+                    Button
+                </Button>
+                <Button
+                    customType="button"
+                    variant="destructive"
+                >
+                    <Icon
+                        size="small"
+                        name="star"
+                    />
+                </Button>
+                <Button
+                    customType="button"
+                    variant="destructive"
+                    size="large"
+                >
+                    <Icon
+                        size="small"
+                        name="star"
+                    />
+                </Button>
+                <Button
+                    customType="button"
+                    variant="destructive"
+                    size="xlarge"
+                >
+                    <Icon
+                        size="small"
+                        name="star"
+                    />
+                </Button>
+                <Button
+                    customType="button"
+                    variant="destructive"
+                    size="xxlarge"
+                >
+                    <Icon
+                        size="small"
+                        name="star"
+                    />
+                </Button>
+            </div>
+            <h2>Link Color Button</h2>
+            <div className="button__variant">
+                <Button
+                    customType="link"
+                    variant="link-color"
+                    href="https://github.com/EmLopezDev"
+                    target="_blank"
+                >
+                    Button
+                </Button>
+                <Button
+                    customType="link"
+                    variant="link-color"
+                    href="https://github.com/EmLopezDev"
+                    target="_blank"
+                    size="large"
+                >
+                    <Icon
+                        size="small"
+                        name="star"
+                    />
+                    Button
+                </Button>
+                <Button
+                    customType="link"
+                    variant="link-color"
+                    href="https://github.com/EmLopezDev"
+                    target="_blank"
+                    size="xlarge"
+                >
+                    <Icon
+                        size="small"
+                        name="star"
+                    />
+                    Button
+                    <Icon
+                        size="small"
+                        name="star"
+                    />
+                </Button>
+                <Button
+                    customType="link"
+                    variant="link-color"
+                    href="https://github.com/EmLopezDev"
+                    target="_blank"
+                    size="xxlarge"
+                >
+                    Button
+                </Button>
+                <Button
+                    customType="link"
+                    variant="link-color"
+                    href="https://github.com/EmLopezDev"
+                    target="_blank"
+                >
+                    <Icon
+                        size="small"
+                        name="star"
+                    />
+                </Button>
+                <Button
+                    customType="link"
+                    variant="link-color"
+                    href="https://github.com/EmLopezDev"
+                    target="_blank"
+                    size="large"
+                >
+                    <Icon
+                        size="small"
+                        name="star"
+                    />
+                </Button>
+                <Button
+                    customType="link"
+                    variant="link-color"
+                    href="https://github.com/EmLopezDev"
+                    target="_blank"
+                    size="xlarge"
+                >
+                    <Icon
+                        size="small"
+                        name="star"
+                    />
+                </Button>
+                <Button
+                    customType="link"
+                    variant="link-color"
+                    href="https://github.com/EmLopezDev"
+                    target="_blank"
+                    size="xxlarge"
+                    disabled
+                >
+                    <Icon
+                        size="small"
+                        name="star"
+                    />
+                </Button>
+            </div>
+            <h2>Link Gray Button</h2>
+            <div className="button__variant">
+                <Button
+                    customType="link"
+                    variant="link-gray"
+                    href="https://github.com/EmLopezDev"
+                    target="_blank"
+                >
+                    Button
+                </Button>
+                <Button
+                    customType="link"
+                    variant="link-gray"
+                    href="https://github.com/EmLopezDev"
+                    target="_blank"
+                    size="large"
+                >
+                    <Icon
+                        size="small"
+                        name="star"
+                    />
+                    Button
+                </Button>
+                <Button
+                    customType="link"
+                    variant="link-gray"
+                    href="https://github.com/EmLopezDev"
+                    target="_blank"
+                    size="xlarge"
+                >
+                    <Icon
+                        size="small"
+                        name="star"
+                    />
+                    Button
+                    <Icon
+                        size="small"
+                        name="star"
+                    />
+                </Button>
+                <Button
+                    customType="link"
+                    variant="link-gray"
+                    href="https://github.com/EmLopezDev"
+                    target="_blank"
+                    size="xxlarge"
+                >
+                    Button
+                </Button>
+                <Button
+                    customType="link"
+                    variant="link-gray"
+                    href="https://github.com/EmLopezDev"
+                    target="_blank"
+                >
+                    <Icon
+                        size="small"
+                        name="star"
+                    />
+                </Button>
+                <Button
+                    customType="link"
+                    variant="link-gray"
+                    href="https://github.com/EmLopezDev"
+                    target="_blank"
+                    size="large"
+                >
+                    <Icon
+                        size="small"
+                        name="star"
+                    />
+                </Button>
+                <Button
+                    customType="link"
+                    variant="link-gray"
+                    href="https://github.com/EmLopezDev"
+                    target="_blank"
+                    size="xlarge"
+                >
+                    <Icon
+                        size="small"
+                        name="star"
+                    />
+                </Button>
+                <Button
+                    customType="link"
+                    variant="link-gray"
+                    href="https://github.com/EmLopezDev"
+                    target="_blank"
+                    size="xxlarge"
+                    disabled
+                >
+                    <Icon
+                        size="small"
+                        name="star"
+                    />
                 </Button>
             </div>
         </section>

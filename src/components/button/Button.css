@@ -4,10 +4,18 @@
     --secondary-background-color: #ffffff;
     --secondary-background-color-hover: #fafafa;
     --tertiary-background-color-hover: #fafafa;
+    --destructive-background-color: #dc2626;
+    --destructive-background-color-hover: #b91c1c;
     --primary-text-color: #ffffff;
     --secondary-text-color: #171717;
     --tertiary-text-color: #4338ca;
+    --primary-link-color: #4338ca;
+    --primary-link-color-hover: #3730a3;
+    --secondary-link-color: #525252;
+    --secondary-link-color-hover: #171717;
     --secondary-border-color: #e6e6e6;
+    --disabled-background-color: #f5f5f5;
+    --disabled-text-color: #a3a3a3;
 
     display: flex;
     justify-content: center;
@@ -21,6 +29,24 @@
     box-shadow:
         0 1px 3px 0 rgba(0, 0, 0, 10%),
         0 1px 2px 0 rgba(0, 0, 0, 6%);
+    transition:
+        transform 150ms ease,
+        box-shadow 150ms ease;
+}
+
+.button:focus-visible {
+    outline: none;
+    box-shadow: 0 0 0 4px rgba(68, 76, 231, 40%);
+}
+
+.button:disabled {
+    background-color: var(--disabled-background-color);
+    color: var(--disabled-text-color);
+    pointer-events: none;
+}
+
+.button--interactive:active:not(:disabled) {
+    transform: translateY(2px) scale(0.98);
 }
 
 .medium {
@@ -44,7 +70,8 @@
     color: var(--primary-text-color);
 }
 
-.primary:hover {
+.primary:hover,
+.primary:focus-visible {
     background-color: var(--primary-background-color-hover);
 }
 
@@ -54,7 +81,8 @@
     border-color: var(--secondary-border-color);
 }
 
-.secondary:hover {
+.secondary:hover,
+.secondary:focus-visible {
     background-color: var(--secondary-background-color-hover);
 }
 
@@ -64,6 +92,50 @@
     color: var(--tertiary-text-color);
 }
 
-.tertiary:hover {
+.tertiary:hover,
+.tertiary:focus-visible {
     background-color: var(--tertiary-background-color-hover);
+}
+
+.destructive {
+    background-color: var(--destructive-background-color);
+    color: var(--primary-text-color);
+}
+
+.destructive:hover,
+.destructive:focus-visible {
+    background-color: var(--destructive-background-color-hover);
+}
+
+.destructive:focus-visible {
+    box-shadow: 0 0 0 4px rgba(217, 45, 32, 40%);
+}
+
+.link-color {
+    padding: 0;
+    box-shadow: none;
+    background-color: transparent;
+    color: var(--primary-link-color);
+    text-decoration: none;
+}
+
+.link-color:hover {
+    color: var(--primary-link-color-hover);
+}
+
+.link-gray {
+    padding: 0;
+    box-shadow: none;
+    background-color: transparent;
+    color: var(--secondary-link-color);
+    text-decoration: none;
+}
+
+.link-gray:hover {
+    color: var(--secondary-link-color-hover);
+}
+
+.disabled {
+    color: var(--disabled-text-color);
+    pointer-events: none;
 }
