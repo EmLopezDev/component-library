@@ -51,18 +51,22 @@
 
 .medium {
     padding: 10px 14px;
+    font-size: 0.875rem;
 }
 
 .large {
     padding: 10px 16px;
+    font-size: 1rem;
 }
 
 .xlarge {
     padding: 12px 20px;
+    font-size: 1rem;
 }
 
 .xxlarge {
     padding: 16px 24px;
+    font-size: 1.125rem;
 }
 
 .primary {
